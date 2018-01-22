@@ -1,0 +1,159 @@
+<?php
+
+function get_dominios($cpanel)
+{
+    /* Esta funciona devuelve un array con los dominios, subdominios de la cuenta excepto los alias o dominios aparcados, si hay algún problema devuelve NULL
+     * Como parámetro acepta un objeto de tipo Cpanel
+     */
+    //Comprobamos si el objeto es instanciado antes de llamar a cualquier método.
+    if (! $cpanel instanceof CPANEL) {
+        return null;
+    }
+    $domains = [];
+    $domains_account = $cpanel->uapi('DomainInfo', 'list_domains'); //Sacamos los dominios de la cuenta
+
+    //Dominio principal de la cuenta
+    $main_domain = $domains_account["cpanelresult"]["result"]["data"]["main_domain"];
+    $domains[] = $main_domain;
+
+    //Dominios adicionales
+    $addon_domains = $domains_account["cpanelresult"]["result"]["data"]["addon_domains"];
+    for ($i = 0; $i < count($addon_domains); $i++) {
+        $domains[] = $domains_account["cpanelresult"]["result"]["data"]["addon_domains"][$i];
+    }
+
+    //Subdominios
+    $subdomains = $domains_account["cpanelresult"]["result"]["data"]["sub_domains"];
+    for ($i = 0; $i < count($subdomains); $i++) {
+        $domains[] = $domains_account["cpanelresult"]["result"]["data"]["sub_domains"][$i];
+    }
+
+    return $domains;
+}
+
+function get_dominios_wordpress($cpanel, $dominios)
+{
+    $dominios_wordpress = [];
+    for ($i = 0; $i < count($dominios); $i++) {
+        if (check_domain_wordpress($cpanel, $dominios[$i])) {
+            $dominios_wordpress [] = $dominios[$i];
+        }
+    }
+
+    return $dominios_wordpress;
+}
+
+function get_quota_acct($cpanel)
+{
+    /* Esta función devuelve un array asociativo de la cuota de la cuenta, incluyendo el espacio libre y el espacio total , si hay algún problema devuelve NULL
+     * Como parámetro acepta un objeto de tipo CPanel
+     */
+    //Comprobamos si el objeto es instanciado antes de llamar a cualquier método.
+    if (! $cpanel instanceof CPANEL) {
+        return null;
+    }
+    $quota_info = $cpanel->uapi('Quota', 'get_quota_info');
+//    var_dump($quota_info);
+    $quotas = [
+        "space_free" => $quota_info["cpanelresult"]["result"]["data"]["megabytes_remain"],
+        "space_total" => $quota_info["cpanelresult"]["result"]["data"]["megabyte_limit"],
+        "space_used" => $quota_info["cpanelresult"]["result"]["data"]["megabytes_used"],
+    ];
+//var_dump($quota_info["cpanelresult"]["result"]["data"]["megabytes_remain"]);
+    //var_dump($quotas);
+    return $quotas;
+}
+
+function get_documentroot_domain($cpanel, $domain)
+{
+    /* Esta función devuelve un string con el document root donde apunta el dominio , si hay algún problema devuelve NULL
+     * Como parámetro acepta un objeto de tipo CPanel y el dominio.
+     */
+    //Comprobamos si el objeto es instanciado antes de llamar a cualquier método.
+    if (! $cpanel instanceof CPANEL && $domain != '') {
+        return null;
+    }
+    $get_userdata = $cpanel->uapi('DomainInfo', 'single_domain_data', ['domain' => $domain,]);
+
+    return $get_userdata["cpanelresult"]["result"]["data"]["documentroot"];
+}
+
+function check_domain_wordpress($cpanel, $domain)
+{
+    $path = get_documentroot_domain($cpanel, $domain);
+    $path_wpconfig = $path."/"."wp-config.php";
+    $directory = ["wp-admin", "wp-includes", "wp-content"];
+    //usamos array_map para añadir el string del path a cada directorio del wordpress.
+    $wp_directory = array_map(function ($value) use ($path) {
+        return $path."/".$value;
+    }, $directory);
+    //var_dump($wp_directory);
+    if (is_file($path_wpconfig) && is_dir($wp_directory[0]) && is_dir($wp_directory[1]) && is_dir($wp_directory[2])) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function get_account_name($cpanel)
+{
+    return $cpanel->cpanelprint('$user');  //Devuelve el nombre de la cuenta
+}
+
+function get_package($account)
+{
+    $fh = fopen("/var/cpanel/users/$account", 'r') or die($php_errormsg);
+    while (! feof($fh)) {
+        $line = fgets($fh, 4096);
+        if (preg_match('/PLAN=(.*)/', $line, $match)) {
+            break;
+        }
+    }
+    fclose($fh);
+
+    return $match[1];
+}
+
+function get_num_mysql($cpanel)
+{
+    // Esta función devuelve el número de base de datos de la cuenta
+    $get_dbinfo = $cpanel->api2('MysqlFE', 'getalldbsinfo');
+    $dbs = array_column($get_dbinfo["cpanelresult"]["data"], 'db');  //Sacamos los registros db y los metemos en un array aparte
+
+    return count($dbs);
+}
+
+function check_web($domain)
+{
+    //Esta función comprueba si una web da 200 ok.
+    //$url = "http://" . "$domain";
+    $url = "http://webempresa.com";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0)");
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_MAXREDIRS, 10);
+    curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+    curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+    curl_setopt($ch, CURLOPT_TIMEOUT, 20);
+    $rt = curl_exec($ch);
+    $info = curl_getinfo($ch);
+    if ($info["http_code"] == 200) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function get_space_web($cpanel, $domain)
+{
+    //Calcula el tamaño de la web a clonar
+    $path = get_documentroot_domain($cpanel, $domain);
+    $espacio = exec("du -sh --block-size=M $path | grep -Eo '[0-9]*'");
+
+    return $espacio;
+}
+
+?>
