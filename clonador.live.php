@@ -1,4 +1,5 @@
 <?php
+//prueba de commit
 session_start();
 require_once "/usr/local/cpanel/php/cpanel.php";
 require_once "functions.php";
