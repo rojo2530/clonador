@@ -256,6 +256,21 @@ function getPrefixBd($cpanel)
     $result = $cpanel->uapi(
         'Mysql', 'get_restrictions'
     );
-
     return $result['cpanelresult']['result']['data']['prefix'];
 }
+
+function createSubdomain($cpanel, $subdomain, $domain)
+{
+    $result = $cpanel->api2(
+        'SubDomain', 'addsubdomain',
+        [
+            'domain' => $subdomain,
+            'rootdomain' => $domain,
+            'dir' => "/public_html/$subdomain",
+        ]
+    );
+
+    return $result['cpanelresult']['data'][0]['result'];
+}
+
+

@@ -12,19 +12,17 @@ if (isset($_SESSION["dominio_elegido"])) {
 } else {
     $config["dominio"] = '';
 }
-
-$nameDbAndUser = getAccountName($cpanel) . '_' . createNameRandom(4);
+$nameDbAndUser = getPrefixBd($cpanel).'_'.createNameRandom(4);
 $config['dbname'] = $nameDbAndUser;
 $config['userdb'] = $nameDbAndUser;
 $config['userdbPassword'] = createNameRandom(8);
-/**  if (! createDb($cpanel, $nameDbAndUser)) {
+if (! createDb($cpanel, $nameDbAndUser)) {
     dd('No se ha podido crear la base de datos');
 }
 if (! createUserdb($cpanel, $nameDbAndUser, $config['userdbPassword'])) {
     dd('No se ha podido crear el usuario de la base de datos');
 }
 grantUserDb($cpanel, $config['dbname'], $config['userdb']);
-**/
 
 echo json_encode($config);
 
