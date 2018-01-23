@@ -6,7 +6,7 @@ require_once "functions.php";
 
 $cpanel = new CPANEL();
 echo $cpanel->header("Clona tu Wordpress");
-
+dd('Prueba de commit');
 $domainsWp = getDomainsWordpress($cpanel, getDomains($cpanel));
 $nameDbAndUser = getAccountName($cpanel) . '_' . createNameRandom(4);
 
