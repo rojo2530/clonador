@@ -23,7 +23,7 @@ if (! createUserdb($cpanel, $nameDbAndUser, $config['userdbPassword'])) {
     dd('No se ha podido crear el usuario de la base de datos');
 }
 grantUserDb($cpanel, $config['dbname'], $config['userdb']);
-if (! createSubdomain($cpanel, trim($config['prefixSubdomain'], '.'), $config['domain'])) {
+if (! createSubdomain($cpanel, $config['prefixSubdomain'], $config['domain'])) {
     dd('No se ha podido crear el subdominio');
 }
 

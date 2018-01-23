@@ -16,7 +16,7 @@ $max_dbs = $cpanel->cpanelprint('$CPDATA{\'MAXSQL\'}'); //Puede ser un número o
 
 
 $domainSelect = $_POST['dominio'];
-$subdomainClon = $config['prefixSubdomain'] . $domainSelect;
+$subdomainClon = $config['prefixSubdomain'].'.'.$domainSelect;   //weclon.domain.com
 
 $_SESSION["dominio_elegido"] = $domainSelect;
 $_SESSION["document_root"] = getDocumentrootDomain($cpanel, $domainSelect);
