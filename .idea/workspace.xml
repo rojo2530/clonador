@@ -28,7 +28,7 @@
         <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="364">
-              <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+              <caret line="27" column="119" lean-forward="false" selection-start-line="27" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -172,7 +172,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
-      <workItem from="1516634059558" duration="7406000" />
+      <workItem from="1516634059558" duration="7488000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -237,11 +237,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516721011556</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Prueba de commit">
+      <created>1516721151404</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1516721151404</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7406000" />
+    <option name="totallyTimeSpent" value="7488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
@@ -331,7 +338,7 @@
     <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="364">
-          <caret line="27" column="72" lean-forward="false" selection-start-line="27" selection-start-column="72" selection-end-line="27" selection-end-column="72" />
+          <caret line="27" column="119" lean-forward="false" selection-start-line="27" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
