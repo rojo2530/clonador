@@ -10,7 +10,7 @@ $cpanel = new CPANEL();
 if (isset($_SESSION["dominio_elegido"])) {
     $config["domain"] = $_SESSION["dominio_elegido"];
 } else {
-    $config["dominio"] = '';
+    $config["domain"] = '';
 }
 $nameDbAndUser = getPrefixBd($cpanel).'_'.createNameRandom(4);
 $config['dbname'] = $nameDbAndUser;
@@ -23,6 +23,9 @@ if (! createUserdb($cpanel, $nameDbAndUser, $config['userdbPassword'])) {
     dd('No se ha podido crear el usuario de la base de datos');
 }
 grantUserDb($cpanel, $config['dbname'], $config['userdb']);
+if (! createSubdomain($cpanel, trim($config['prefixSubdomain'], '.'), $config['domain'])) {
+    dd('No se ha podido crear el subdominio');
+}
 
 echo json_encode($config);
 
