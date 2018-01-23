@@ -25,7 +25,7 @@ function check_domain (dominio){
             $("#siguiente").prop('disabled', true);   //Deshabilitamos boton
             $("#check1").removeClass('alert alert-success');
 			//$("#check1").html("Procesando, espere por favor...");
-            $("#check1").append('<p><img src="https://webempresa.io/we-installatron/images/ajax-loader.gif" /> Por favor espere...</p>');
+            $("#check1").append('<p><img width="40px" src="https://webempresa.io/we-installatron/images/ajax-loader.gif" /> Por favor espere...</p>');
         },
         success:  function (response) {
             console.log(response);
