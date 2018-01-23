@@ -233,7 +233,6 @@ function checkTestDomain($cpanel, $domainSelect)
     $domainsAcct = getDomains($cpanel);
     $subdomainClon = '';
     $result = [];
-
     if (! in_array($domainSelect, getDomainsWordpress($cpanel, $domainsAcct)))  {
         return getMessage(false, "El dominio elegido no pertenece a la cuenta o no es Wordpress");
     }
@@ -252,3 +251,11 @@ function getMessage($test , $message)
 
 }
 
+function getPrefixBd($cpanel)
+{
+    $result = $cpanel->uapi(
+        'Mysql', 'get_restrictions'
+    );
+
+    return $result['cpanelresult']['result']['data']['prefix'];
+}

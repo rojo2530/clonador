@@ -9,10 +9,10 @@ $cpanel = new CPANEL();
 
 if (isset($_SESSION["dominio_elegido"])) {
     $config["domain"] = $_SESSION["dominio_elegido"];
-}
-else {
+} else {
     $config["dominio"] = '';
 }
+
 $nameDbAndUser = getAccountName($cpanel) . '_' . createNameRandom(4);
 $config['dbname'] = $nameDbAndUser;
 $config['userdb'] = $nameDbAndUser;
