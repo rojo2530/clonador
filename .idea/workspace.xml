@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="Creamos la función createSubdomin">
+    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clonador.live.php" afterPath="$PROJECT_DIR$/clonador.live.php" />
     </list>
@@ -18,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/clonador.live.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
-      <workItem from="1516634059558" duration="6348000" />
+      <workItem from="1516634059558" duration="6396000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -185,11 +185,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516710251013</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creamos la función createSubdomin">
+      <created>1516719928541</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1516719928541</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6348000" />
+    <option name="totallyTimeSpent" value="6396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
@@ -271,7 +278,7 @@
     <entry file="file://$PROJECT_DIR$/clonador.live.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
