@@ -61,6 +61,9 @@ function clon_domain (){
     });
 }
 
+function divSucess() {
+    return "";
+}
 
 
 
