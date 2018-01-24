@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="">
+    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="Cambio para llamar al script de ramon">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" afterPath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.view.php" afterPath="$PROJECT_DIR$/views/index.view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,13 +24,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gsdk-bootstrap-wizard.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gsdk-bootstrap-wizard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="458">
               <caret line="58" column="93" lean-forward="true" selection-start-line="58" selection-start-column="93" selection-end-line="58" selection-end-column="93" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.view.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/index.view.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
+              <folding>
+                <element signature="e#1654#1659#0#HTML" expanded="true" />
+                <element signature="e#1675#1680#0#HTML" expanded="true" />
+                <element signature="e#1705#1710#0#HTML" expanded="true" />
+                <element signature="e#1716#1721#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,6 +114,7 @@
         <option value="$PROJECT_DIR$/check.live.php" />
         <option value="$PROJECT_DIR$/clonar.live.php" />
         <option value="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
+        <option value="$PROJECT_DIR$/views/index.view.php" />
       </list>
     </option>
   </component>
@@ -152,6 +168,11 @@
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="Clonador" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Clonador" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -184,7 +205,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
-      <workItem from="1516634059558" duration="10942000" />
+      <workItem from="1516634059558" duration="11356000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -284,11 +305,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516753945871</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Cambio para llamar al script de ramon">
+      <created>1516754370070</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1516754370070</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10942000" />
+    <option name="totallyTimeSpent" value="11356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
@@ -377,6 +405,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="58" column="93" lean-forward="true" selection-start-line="58" selection-start-column="93" selection-end-line="58" selection-end-column="93" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/clonador.live.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -385,12 +423,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
+    <entry file="file://$PROJECT_DIR$/views/index.view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="58" column="93" lean-forward="true" selection-start-line="58" selection-start-column="93" selection-end-line="58" selection-end-column="93" />
+        <state relative-caret-position="343">
+          <caret line="40" column="6" lean-forward="false" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#1654#1659#0#HTML" expanded="true" />
+            <element signature="e#1675#1680#0#HTML" expanded="true" />
+            <element signature="e#1705#1710#0#HTML" expanded="true" />
+            <element signature="e#1716#1721#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

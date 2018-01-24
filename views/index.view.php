@@ -30,7 +30,15 @@
     <script src="assets/js/jquery.validate.min.js"></script>
 </head>
 
-
+<div id="deleteError" class="alert alert-danger">
+    <span class="glyphicon glyphicon-remove-sign"></span>
+    <div class="alert-message">
+        There was a problem removing the subdomain “weclon.xphera.es”.
+        <div>
+            subdomain &#39;weclon.xphera.es&#39; does not exist for user &#39;xphera&#39;
+        </div>
+    </div>
+</div>
 <div class="image-container set-full-height">
     <!--   Big container   -->
     <div class="container">
