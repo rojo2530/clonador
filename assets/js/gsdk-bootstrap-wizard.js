@@ -54,7 +54,9 @@ function clon_domain (){
         },
         success:  function (response) {
             console.log(response);
-            $("#tabclon").html("sh clonar_ramon.sh");
+            $("#tabclon").html("sh clonar_ramon.sh " + response.account +
+                " " + response.domain + " " + response.subdomainClon +
+                " " + response.dbname + " " + response.userdb + " " + response.userdbPassword);
         }
     });
 }
