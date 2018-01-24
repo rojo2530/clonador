@@ -29,7 +29,7 @@ if (! createSubdomain($cpanel, $config['prefixSubdomain'], $config['domain'])) {
 $paramScript = [
     'account' => getAccountName($cpanel),
     'domain' => $config['domain'],
-    'subdomainClon' => $config['prefixSubdomain'].'.'.$domainSelect,
+    'subdomainClon' => $config['prefixSubdomain'].'.'.$config['domain'],
     'dbname' => $config['dbname'],
     'userdb' => $config['userdb'],
     'userdbPassword' => $config['userdbPassword'],
