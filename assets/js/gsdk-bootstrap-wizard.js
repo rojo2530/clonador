@@ -62,7 +62,7 @@ function clon_domain (){
 }
 
 function divSucess(message) {
-    return "<div id=\"deleteSuccess\" class=\"alert alert-sucess\">\n" +
+    return "<div id=\"deleteSuccess\" class=\"alert alert-success\">\n" +
         "    <span class=\"glyphicon glyphicon-ok-sign\"></span>\n" +
         "    <div class=\"alert-message\">\n" +
         message +
