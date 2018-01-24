@@ -30,14 +30,14 @@ function check_domain (dominio){
         success:  function (response) {
             console.log(response);
             if (response.check) {
-               $("#check1").addClass('alert alert-success');
-               $("#check1").html(response.error_txt);
+                // $("#check1").addClass('alert alert-success');
+                $("#check1").html(divSucess(response.error_txt));
 			   $("#clonar").prop('disabled', false);
             }
             else {
-                $("#check1").addClass('alert alert-danger');
-                $("#addErrorImg").addClass('glyphicon glyphicon-exclamation-sign');
-                $("#check1").html(response.error_txt);
+                //    $("#check1").addClass('alert alert-danger');
+                //    $("#addErrorImg").addClass('glyphicon glyphicon-exclamation-sign');
+                $("#check1").html(divSucess(response.error_txt));
             }
         }
     });
@@ -61,8 +61,13 @@ function clon_domain (){
     });
 }
 
-function divSucess() {
-    return "";
+function divSucess(message) {
+    return "<div id=\"deleteError\" class=\"alert alert-danger\">\n" +
+        "    <span class=\"glyphicon glyphicon-remove-sign\"></span>\n" +
+        "    <div class=\"alert-message\">\n" +
+        message +
+        "    </div>\n" +
+        "</div>";
 }
 
 
