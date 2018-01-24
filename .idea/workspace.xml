@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="">
+    <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="Cambio para llamar al script de ramon">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/check.live.php" afterPath="$PROJECT_DIR$/check.live.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" afterPath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clonar.live.php" afterPath="$PROJECT_DIR$/clonar.live.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.live.php" afterPath="$PROJECT_DIR$/config.live.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -26,11 +25,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gsdk-bootstrap-wizard.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="gsdk-bootstrap-wizard.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="27" column="119" lean-forward="false" selection-start-line="27" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
+            <state relative-caret-position="367">
+              <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="clonar.live.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="clonar.live.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/clonar.live.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
+            <state relative-caret-position="419">
+              <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -51,8 +50,8 @@
       <file leaf-file-name="check.live.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check.live.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="18" column="84" lean-forward="false" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
+            <state relative-caret-position="103">
+              <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -61,7 +60,7 @@
       <file leaf-file-name="functions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
+            <state relative-caret-position="405">
               <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
               <folding />
             </state>
@@ -72,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/config.live.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -97,10 +96,10 @@
         <option value="$PROJECT_DIR$/check_view.php" />
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/clonador.live.php" />
-        <option value="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
         <option value="$PROJECT_DIR$/config.live.php" />
         <option value="$PROJECT_DIR$/check.live.php" />
         <option value="$PROJECT_DIR$/clonar.live.php" />
+        <option value="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
       </list>
     </option>
   </component>
@@ -186,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
-      <workItem from="1516634059558" duration="8551000" />
+      <workItem from="1516634059558" duration="9938000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -265,11 +264,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516721233282</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Cambio forma de guardar prefixSubdomain">
+      <created>1516722312073</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1516722312073</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8551000" />
+    <option name="totallyTimeSpent" value="9938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
@@ -308,7 +314,8 @@
     <MESSAGE value="Creamos la función prefixBd" />
     <MESSAGE value="Creamos la función createSubdomin" />
     <MESSAGE value="Prueba de commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prueba de commit" />
+    <MESSAGE value="Cambio forma de guardar prefixSubdomain" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio forma de guardar prefixSubdomain" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -326,8 +333,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
+        <state relative-caret-position="405">
           <caret line="271" column="0" lean-forward="false" selection-start-line="271" selection-start-column="0" selection-end-line="271" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/check.live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="18" column="55" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/clonar.live.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="419">
+          <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -342,35 +373,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="27" column="119" lean-forward="false" selection-start-line="27" selection-start-column="119" selection-end-line="27" selection-end-column="119" />
+        <state relative-caret-position="367">
+          <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.live.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/check.live.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="18" column="84" lean-forward="false" selection-start-line="18" selection-start-column="84" selection-end-line="18" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/clonar.live.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="21" column="73" lean-forward="true" selection-start-line="21" selection-start-column="73" selection-end-line="21" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>

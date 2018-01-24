@@ -26,6 +26,13 @@ grantUserDb($cpanel, $config['dbname'], $config['userdb']);
 if (! createSubdomain($cpanel, $config['prefixSubdomain'], $config['domain'])) {
     dd('No se ha podido crear el subdominio');
 }
-
-echo json_encode($config);
+$paramScript = [
+    'account' => getAccountName($cpanel),
+    'domain' => $config['domain'],
+    'subdomainClon' => $config['prefixSubdomain'].'.'.$domainSelect,
+    'dbname' => $config['dbname'],
+    'userdb' => $config['userdb'],
+    'userdbPassword' => $config['userdbPassword'],
+];
+echo json_encode($paramScript);
 

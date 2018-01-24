@@ -50,11 +50,11 @@ function clon_domain (){
         beforeSend: function () {
             $("#anterior").remove();
             $("#clonar").remove();
-           $("#tabclon").append('<img src="assets/img/ajax-loader.gif"/> Clonando...');
+            $("#tabclon").append('<img width="40px" src="https://webempresa.io/we-installatron/images/ajax-loader.gif"/> Clonando...');
         },
         success:  function (response) {
             console.log(response);
-            $("#tabclon").html("Desde aquí llamamos al script de Ramon para clonar " + response.domain);
+            $("#tabclon").html("sh clonar_ramon.sh");
         }
     });
 }
