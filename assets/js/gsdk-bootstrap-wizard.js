@@ -37,7 +37,7 @@ function check_domain (dominio){
             else {
                 //    $("#check1").addClass('alert alert-danger');
                 //    $("#addErrorImg").addClass('glyphicon glyphicon-exclamation-sign');
-                $("#check1").html(divSucess(response.error_txt));
+                $("#check1").html(divAlert(response.error_txt));
             }
         }
     });
@@ -62,12 +62,21 @@ function clon_domain (){
 }
 
 function divSucess(message) {
+    return "<div id=\"deleteSuccess\" class=\"alert alert-sucess\">\n" +
+        "    <span class=\"glyphicon glyphicon-ok-sign\"></span>\n" +
+        "    <div class=\"alert-message\">\n" +
+        message +
+        "    </div>\n" +
+        "</div>";
+}
+
+function divAlert(message) {
     return "<div id=\"deleteError\" class=\"alert alert-danger\">\n" +
         "    <span class=\"glyphicon glyphicon-remove-sign\"></span>\n" +
         "    <div class=\"alert-message\">\n" +
         message +
         "    </div>\n" +
-        "</div>";
+        "</div>"
 }
 
 
