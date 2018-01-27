@@ -2,7 +2,7 @@
 if(session_status() == 1) {
     session_start();
 }
-dd($_SERVER);
+//dd($_SERVER);
 
 require_once ("/usr/local/cpanel/php/cpanel.php");
 require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/functions.php';
