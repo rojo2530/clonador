@@ -2,6 +2,11 @@
 if(session_status() == 1) {
     session_start();
 }
+define('AJAX_REQUEST', isset($_SERVER['HTTP_X_REQUESTED_WITH'])
+    && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+if (! AJAX_REQUEST) {
+    die('No debes de acceder a este fichero');
+}
 require_once ("/usr/local/cpanel/php/cpanel.php");
 require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/functions.php';
 $config = require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/config.live.php';
