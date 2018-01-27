@@ -2,6 +2,11 @@
 if(session_status() == 1) {
     session_start();
 }
+define('AJAX_REQUEST', isset($_SERVER['HTTP_X_REQUESTED_WITH'])
+    && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest');
+if (! AJAX_REQUEST) {
+    die('No debes de acceder a este fichero');
+}
 echo "<pre>";
 var_dump($_SERVER);
 echo "</pre>";
