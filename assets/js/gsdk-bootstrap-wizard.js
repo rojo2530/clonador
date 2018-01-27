@@ -78,10 +78,6 @@ function divAlert(message) {
         "    </div>\n" +
         "</div>"
 }
-
-
-
-
 searchVisible = 0;
 transparent = true;
 
