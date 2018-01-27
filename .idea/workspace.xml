@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" afterPath="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/check.live.php" afterPath="$PROJECT_DIR$/check.live.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.view.php" afterPath="$PROJECT_DIR$/views/index.view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.view.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="990">
-              <caret line="33" column="33" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
+            <state relative-caret-position="163">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -57,7 +56,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.live.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="check.live.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/check.live.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
@@ -105,9 +104,9 @@
         <option value="$PROJECT_DIR$/clonador.live.php" />
         <option value="$PROJECT_DIR$/config.live.php" />
         <option value="$PROJECT_DIR$/clonar.live.php" />
-        <option value="$PROJECT_DIR$/views/index.view.php" />
         <option value="$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js" />
         <option value="$PROJECT_DIR$/check.live.php" />
+        <option value="$PROJECT_DIR$/views/index.view.php" />
       </list>
     </option>
   </component>
@@ -204,7 +203,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
       <workItem from="1516634059558" duration="13239000" />
-      <workItem from="1517070070573" duration="144000" />
+      <workItem from="1517070070573" duration="262000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -346,11 +345,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516756001729</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="cambio para sacar los mensajes en bonito.">
+      <created>1517070228569</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1517070228569</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13383000" />
+    <option name="totallyTimeSpent" value="13501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="0" />
@@ -491,14 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="33" column="33" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="37" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/gsdk-bootstrap-wizard.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -513,6 +511,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -29,13 +29,6 @@
     <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
     <script src="assets/js/jquery.validate.min.js"></script>
 </head>
-
-<div id="deleteError" class="alert alert-danger">
-    <span class="glyphicon glyphicon-remove-sign"></span>
-    <div class="alert-message">
-        There was a problem removing the subdomain “weclon.xphera.es”.
-    </div>
-</div>
 <div class="image-container set-full-height">
     <!--   Big container   -->
     <div class="container">
