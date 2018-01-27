@@ -7,9 +7,7 @@ define('AJAX_REQUEST', isset($_SERVER['HTTP_X_REQUESTED_WITH'])
 if (! AJAX_REQUEST) {
     die('No debes de acceder a este fichero');
 }
-echo "<pre>";
-var_dump($_SERVER);
-echo "</pre>";
+
 require_once ("/usr/local/cpanel/php/cpanel.php");
 require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/functions.php';
 $config = require '/usr/local/cpanel/base/frontend/paper_lantern/clonador/config.live.php';

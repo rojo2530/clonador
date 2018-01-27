@@ -59,8 +59,8 @@
       <file leaf-file-name="check.live.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/check.live.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="210">
+              <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -203,7 +203,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
       <workItem from="1516634059558" duration="13239000" />
-      <workItem from="1517070070573" duration="586000" />
+      <workItem from="1517070070573" duration="790000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -373,11 +373,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517070479085</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Chequemamos si la petición es ajax o no">
+      <created>1517070705361</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1517070705361</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13825000" />
+    <option name="totallyTimeSpent" value="14029000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="0" />
@@ -420,7 +427,8 @@
     <MESSAGE value="Cambio para llamar al script de ramon" />
     <MESSAGE value="cambio para sacar los mensajes en bonito." />
     <MESSAGE value="Quito mensaje bootstrap de la portada." />
-    <option name="LAST_COMMIT_MESSAGE" value="Quito mensaje bootstrap de la portada." />
+    <MESSAGE value="Chequemamos si la petición es ajax o no" />
+    <option name="LAST_COMMIT_MESSAGE" value="Chequemamos si la petición es ajax o no" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -539,8 +547,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/check.live.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+        <state relative-caret-position="210">
+          <caret line="7" column="46" lean-forward="true" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
           <folding />
         </state>
       </provider>
