@@ -2,8 +2,9 @@
 if(session_status() == 1) {
     session_start();
 }
-//dd($_SERVER);
-
+echo "<pre>";
+var_dump($_SERVER);
+echo "</pre>";
 require_once ("/usr/local/cpanel/php/cpanel.php");
 require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/functions.php';
 $config = require '/usr/local/cpanel/base/frontend/paper_lantern/clonador/config.live.php';
