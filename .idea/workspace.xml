@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04bc59bc-42f4-4164-ba6f-b89640254693" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/clonar.live.php" afterPath="$PROJECT_DIR$/clonar.live.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -51,7 +51,7 @@
         <entry file="file://$PROJECT_DIR$/clonar.live.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="386">
-              <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+              <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -204,7 +204,7 @@
       <option name="presentableId" value="Default" />
       <updated>1516634057977</updated>
       <workItem from="1516634059558" duration="13239000" />
-      <workItem from="1517070070573" duration="2921000" />
+      <workItem from="1517070070573" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="Primer commit">
       <created>1516635047092</created>
@@ -402,11 +402,18 @@
       <option name="project" value="LOCAL" />
       <updated>1517145643300</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Volvemos atrás.">
+      <created>1517146926483</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1517146926483</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16160000" />
+    <option name="totallyTimeSpent" value="16287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="0" />
@@ -451,7 +458,8 @@
     <MESSAGE value="Quito mensaje bootstrap de la portada." />
     <MESSAGE value="Chequemamos si la petición es ajax o no" />
     <MESSAGE value="Usamos el operador ?? de PHP 7" />
-    <option name="LAST_COMMIT_MESSAGE" value="Usamos el operador ?? de PHP 7" />
+    <MESSAGE value="Volvemos atrás." />
+    <option name="LAST_COMMIT_MESSAGE" value="Volvemos atrás." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -571,7 +579,7 @@
     <entry file="file://$PROJECT_DIR$/clonar.live.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="386">
-          <caret line="19" column="2" lean-forward="false" selection-start-line="19" selection-start-column="2" selection-end-line="19" selection-end-column="2" />
+          <caret line="19" column="4" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
           <folding />
         </state>
       </provider>
