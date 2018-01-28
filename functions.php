@@ -269,7 +269,6 @@ function createSubdomain($cpanel, $subdomain, $domain)
             'dir' => "/public_html/$subdomain",
         ]
     );
-
     return $result['cpanelresult']['data'][0]['result'];
 }
 
