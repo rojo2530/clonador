@@ -12,11 +12,12 @@ require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/functions.p
 $config = require_once '/usr/local/cpanel/base/frontend/paper_lantern/clonador/config.live.php';
 $cpanel = new CPANEL();
 
-if (isset($_SESSION["dominio_elegido"])) {
+$config["domain"] = $_SESSION["dominio_elegido"] ?? '';
+/* if (isset($_SESSION["dominio_elegido"])) {
     $config["domain"] = $_SESSION["dominio_elegido"];
 } else {
     $config["domain"] = '';
-}
+} */
 $nameDbAndUser = getPrefixBd($cpanel).'_'.createNameRandom(4);
 $config['dbname'] = $nameDbAndUser;
 $config['userdb'] = $nameDbAndUser;
